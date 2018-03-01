@@ -1,10 +1,10 @@
 {
   "name": "react-native-converse",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A chat library and UI components for react native.",
-  "main": "./index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "version": "conventional-changelog -p angular -i doc/CHANGELOG.md -s && git add -A doc/CHANGELOG.md",
+    "version": "conventional-changelog -p angular -i ./CHANGELOG.md -s && git add -A ./CHANGELOG.md",
     "postpublish": "git push upstream master && git push upstream --tags"
   },
   "repository": {
@@ -23,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/SpoonX/react-native-converse/issues"
   },
-  "homepage": "https://github.com/SpoonX/react-native-converse"
+  "homepage": "https://github.com/SpoonX/react-native-converse",
+  "devDependencies": {
+    "babel-preset-react-native": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": ">= 16.2.x",
+    "react-native": ">= 0.53.x"
+  }
 }

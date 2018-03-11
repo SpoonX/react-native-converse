@@ -33,6 +33,7 @@ export class Chat extends Component {
     animated           : PropTypes.bool,
     onSubmit           : PropTypes.func,
     renderBubble       : PropTypes.func,
+    inputPlaceholder   : PropTypes.string,
     messageHydrator    : PropTypes.func,
     participantHydrator: PropTypes.func,
     renderMessageInput : PropTypes.func,
@@ -143,7 +144,13 @@ export class Chat extends Component {
       return this.props.renderMessageInput()
     }
 
-    return <MessageInput theme={this.state.theme.messageInput} onSubmit={text => this.onSubmit(text)} />
+    return (
+      <MessageInput
+        theme={this.state.theme.messageInput}
+        placeholder={this.props.inputPlaceholder}
+        onSubmit={text => this.onSubmit(text)}
+      />
+    );
   }
 
   renderItem ({item, index}) {

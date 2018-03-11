@@ -23,6 +23,7 @@ class ChatScreen extends Component {
       user               : 1,    // Active user
       animated           : true, // Animate new messages
       onSubmit           : text => this.onSubmit(text),
+      inputPlaceholder   : 'Type a message...',
       messageHydrator    : message => this.hydrateMessage(message),
       participantHydrator: participant => this.hydrateParticipant(participant),
       participants       : [
@@ -112,12 +113,17 @@ While working on this module, the following values have been and will be kept in
 - **Performance.** Some components are limited in customization purely for the sake of performance.
 - **Performance again.** Seriously, the chat should be as slick as possible.
 - **Cater to the majority.** The components are designed around most common use.
-- **Extendible.** Add what you need in a uniform way.
+- **Extensible.** Add what you need in a uniform way.
 
 ## Roadmap
 
+- Document bubble types.
+- Document custom renderers.
+- Add more bubble types.
 - Allow for more customization.
 - Custom animations.
+- Implement attachment features.
+- Implement toggle for feature button.
 - Avatars.
 - Plugins and message types.
 - Add more default message types.

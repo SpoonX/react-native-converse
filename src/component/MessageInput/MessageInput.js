@@ -18,6 +18,7 @@ export class MessageInput extends Component {
   static propTypes = {
     onSubmit: PropTypes.func,
     theme: PropTypes.object,
+    placeholder: PropTypes.string
   }
 
   static defaultProps = {

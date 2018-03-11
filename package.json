@@ -1,6 +1,6 @@
 {
   "name": "react-native-converse",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A chat library and UI components for react native.",
   "main": "./src/index.js",
   "scripts": {
